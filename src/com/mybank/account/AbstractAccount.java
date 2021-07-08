@@ -7,6 +7,7 @@ public abstract class AbstractAccount {
 		return "AbstractAccount [customer=" + customer + ", accountName=" + accountName + ", balance=" + balance
 				+ ", accountNumber=" + accountNumber + "]";
 	}
+	
 	//Properties
 	private String customer;
 	private String accountName;
