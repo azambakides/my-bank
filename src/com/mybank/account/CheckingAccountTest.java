@@ -56,4 +56,26 @@ class CheckingAccountTest {
 			account.deposit(amount);
 		});
 	}
+	
+	@Test
+	void withdraw__amount_equal_to_zero__throws() {
+		// Another bad amount
+		double amount = -1;
+		
+		//Do it
+		assertThrows(IllegalArgumentException.class, () -> {
+			account.withdraw(amount);
+		});
+	}
+	
+	@Test
+	void withdraw__amount_less_that_or_equal_to_zero__giveup() {
+		// Another bad amount
+		double amount = 0;
+		
+		//Do it
+		assertThrows(IllegalArgumentException.class, () -> {
+			account.withdraw(amount);
+		});
+	}
 }
