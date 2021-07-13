@@ -37,6 +37,5 @@ public class CheckingAccount extends AbstractAccount {
 		checkForSufficientFundsElseThrow(amount);
 		
 		return super.transfer(toAccount, amount);
-				
 		}
 	}
